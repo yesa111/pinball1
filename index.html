@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    </head>
+    <style>
+        body { font-family: 'Quicksand', sans-serif;}
+        h1,p  { text-align: center}
+        p { font-style: italic; }
+        #divHead, canvas {    
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 800px;}
+        #divHead {
+            width:810px;
+            padding-bottom:10px;
+        }
+    </style>
+    <h1>Pachinko Pinball</h1>
+    <p>Press Enter to launch, SpaceBar for a new ball, 1 to reload balls</p>
+    <body>
+        <div id="divHead">
+            <div id="divScore" style="float:left">
+                Score:<p style='display:inline;'></p>
+            </div>
+            <div id="divBalls" style="float:right">
+                Balls:<p style='display:inline;'>3</p>
+            </div>
+        </div>        
+        <br>
+    </body>
+    <script src="/jq/jquery.min.js"></script>
+    <script src="/scripts/matter.min.js"></script>
+    <script src="/game.js"></script>
+</html>
