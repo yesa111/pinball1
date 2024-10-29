@@ -8,8 +8,8 @@ var modelsDir;
 var viewX = 0;
 var viewY = 15;
 var viewZ = -7.3;
-var viewPhi = -54;
-var viewTheta = 180;
+var viewPhi = -84;
+var viewTheta = 190;
 
 var viewXSpeed = 0;
 var viewYSpeed = 0;
@@ -132,13 +132,13 @@ const numUVs = [[0.735309, 0.956854, 0.760579, 0.918019, 0.760579, 0.956854, 0.7
                 [0.710118, 0.956466, 0.735388, 0.917632, 0.735388, 0.956466, 0.710118, 0.917632]];
 
 function main() {
-  gl.clearColor(0.85, 0.85, 0.85, 1.0);
+  gl.clearColor(1.0, 0.0, 0.0, 1.0);
   gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
   gl.enable(gl.DEPTH_TEST);
 
   // define directional light
-  var dirLightAlpha = utils.degToRad(-60);
-  var dirLightBeta = utils.degToRad(50);
+  var dirLightAlpha = utils.degToRad(-160);
+  var dirLightBeta = utils.degToRad(150);
 
   var directionalLightA = [Math.cos(dirLightAlpha) * Math.cos(dirLightBeta),
   Math.sin(dirLightAlpha),
@@ -153,16 +153,14 @@ function main() {
   var directionalLightColorB = [0.35, 0.35, 0.85];
 
   // define material color 
-  var materialColor = [1.0, 1.0, 1.0];
+  var materialColor = [1.0, 0.0, 0.0];
 
   // define ambient light color and material
-  var ambientLight = [0.55, 0.1, 0.8];
-  var ambientMat = [0.4, 0.2, 0.6];
-    
+  var ambientLight = [0.8, 0.0, 0.0]; // Red ambient light
+  var ambientMat = [0.1, 0.1, 0.1];   // Black ambient material
   //define specular component of color
-  var specularColor = [1.0, 1.0, 1.0];
+  var specularColor = [1.0, 0.0, 0.0];
   var specShine = 2.0;
-    
   //define emission color for digital score
   var emission = [1.0, 0.0, 0.0];    
 
