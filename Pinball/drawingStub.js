@@ -137,30 +137,30 @@ function main() {
   gl.enable(gl.DEPTH_TEST);
 
   // define directional light
-  var dirLightAlpha = utils.degToRad(-160);
-  var dirLightBeta = utils.degToRad(150);
+  var dirLightAlpha = utils.degToRad(-120);
+  var dirLightBeta = utils.degToRad(100);
 
   var directionalLightA = [Math.cos(dirLightAlpha) * Math.cos(dirLightBeta),
   Math.sin(dirLightAlpha),
   Math.cos(dirLightAlpha) * Math.sin(dirLightBeta)
   ];
-  var directionalLightColorA = [0.85, 0.35, 0.35];
+  var directionalLightColorA = [1.0, 0.0, 0.0];
 
   var directionalLightB = [-Math.cos(dirLightAlpha) * Math.cos(dirLightBeta),
   Math.sin(dirLightAlpha),
   Math.cos(dirLightAlpha) * Math.sin(dirLightBeta)
   ];
-  var directionalLightColorB = [0.35, 0.35, 0.85];
+  var directionalLightColorB = [0.0, 0.0, 0.0];
 
   // define material color 
-  var materialColor = [1.0, 0.0, 0.0];
+  var materialColor = [1.0, 0.4, 0.4];
 
   // define ambient light color and material
-  var ambientLight = [0.8, 0.0, 0.0]; // Red ambient light
+  var ambientLight = [1.0, 0.2, 0.2]; // Lighter red ambient light
   var ambientMat = [0.1, 0.1, 0.1];   // Black ambient material
   //define specular component of color
-  var specularColor = [1.0, 0.0, 0.0];
-  var specShine = 2.0;
+  var specularColor = [1.0, 0.2, 0.2];
+  var specShine = 10.0;
   //define emission color for digital score
   var emission = [1.0, 0.0, 0.0];    
 
